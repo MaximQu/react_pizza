@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^20.1.1",
+    "ahooks": "^3.7.7",
     "axios": "^1.4.0",
+    "clsx": "^1.2.1",
     "lodash.debounce": "^4.0.8",
     "qs": "^6.11.1",
     "react": "^18.2.0",
@@ -20,11 +24,14 @@
     "react-paginate": "^8.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
-    "sass": "^1.62.0"
+    "sass": "^1.62.0",
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "@vitejs/plugin-react": "^4.0.0-beta.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
