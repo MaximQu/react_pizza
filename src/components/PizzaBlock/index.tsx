@@ -17,7 +17,7 @@ type PizzaBlockProps = {
 
 const nameTypes = ['тонке', 'традиційне'];
 
-const PizzaBlock: FC<PizzaBlockProps> = ({ id, imageUrl, title, sizes, price, types }) => {
+export const PizzaBlock: FC<PizzaBlockProps> = ({ id, imageUrl, title, sizes, price, types }) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
   const [activeType, setActiveType] = useState(0);
@@ -87,5 +87,3 @@ const PizzaBlock: FC<PizzaBlockProps> = ({ id, imageUrl, title, sizes, price, ty
     </div>
   );
 };
-
-export default PizzaBlock;

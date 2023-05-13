@@ -1,13 +1,13 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, FC } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import qs from 'qs';
-import Categories from '../components/Categories';
-import PizzaBlock from '../components/PizzaBlock';
-import Skeleton from '../components/PizzaBlock/Skeleton';
+import { Categories } from '../components/Categories';
+import { PizzaBlock } from '../components/PizzaBlock';
+import { Skeleton } from '../components/PizzaBlock/Skeleton';
 import { sortList } from '../components/Sort';
-import Pagination from '../components/Pagination';
-import SortPopup from '../components/Sort';
+import { Pagination } from '../components/Pagination';
+import { SortPopup } from '../components/Sort';
 import { useAppDispatch } from '../redux/store';
 import { selectFilter } from '../redux/filter/selectors';
 import { selectPizzaData } from '../redux/pizza/selectors';
@@ -15,7 +15,7 @@ import { setCategoryId, setCurrentPage, setFilters } from '../redux/filter/slice
 import { fetchPizzas } from '../redux/pizza/slice';
 import { SearchPizzaParams, Status } from '../redux/pizza/types';
 
-const Home = () => {
+const Home: FC = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const isMounted = useRef(false);

@@ -44,4 +44,4 @@ const FullPizza: FC = () => {
   );
 };
 
-export default FullPizza;
+export default FullPizza

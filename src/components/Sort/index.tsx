@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Sort, sortPropertyEnum } from '../../redux/filter/types';
 import { setSort } from '../../redux/filter/slice';
 
@@ -13,8 +13,8 @@ type SortItem = {
 // }
 
 type SortPopupProps = {
-  value: Sort
-}
+  value: Sort;
+};
 
 export const sortList: SortItem[] = [
   { name: 'популярності (DESC)', sortProperty: sortPropertyEnum.TITLE_DESC },
@@ -25,7 +25,7 @@ export const sortList: SortItem[] = [
   { name: 'алфавіту (ASC)', sortProperty: sortPropertyEnum.TITLE_ASC },
 ];
 
-const SortPopup: FC<SortPopupProps> = React.memo(({value}) => {
+export const SortPopup: FC<SortPopupProps> = React.memo(({ value }) => {
   const dispatch = useDispatch();
   const sortRef = useRef<HTMLDivElement>(null);
 
@@ -81,5 +81,3 @@ const SortPopup: FC<SortPopupProps> = React.memo(({value}) => {
     </div>
   );
 });
-
-export default SortPopup;
