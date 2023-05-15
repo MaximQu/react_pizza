@@ -87,3 +87,4 @@ export const PizzaBlock: FC<PizzaBlockProps> = ({ id, imageUrl, title, sizes, pr
     </div>
   );
 };
+

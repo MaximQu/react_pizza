@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { FC, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 interface MyData {
   imageUrl: string;
@@ -39,7 +39,9 @@ const FullPizza: FC = () => {
           <b>{pizza.price}₴</b>
         </span>
       </div>
-      <button>Назад</button>
+      <Link to="/" className="pizza__back button button--black">
+        <span>Повернутися назад</span>
+      </Link>
     </div>
   );
 };

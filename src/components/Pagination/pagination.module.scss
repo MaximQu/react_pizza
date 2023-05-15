@@ -13,7 +13,9 @@
   }
 
   a {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -29,9 +31,16 @@
     }
   }
   :global {
-    .selected a { 
+    .selected a {
       background-color: #fe5f1e ;
       color: #fff;
     }
   }
+}
+
+@media (max-width: 480.91px) {
+
+ .root {
+  justify-content: center;
+ }
 }

@@ -9,8 +9,6 @@
   border-radius: 10px;
   padding: 12px 20px;
   padding-left: 10px;
-
-
 }
 
 .icon {
@@ -38,10 +36,16 @@
   max-width: 18px;
   min-height: 18px;
   max-height: 18px;
-  opacity: .3;
+  opacity: 0.3;
   cursor: pointer;
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 991.91px) {
+  .root {
+    order: 1;
   }
 }
