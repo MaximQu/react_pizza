@@ -4,4 +4,4 @@
 
 
 - 🔭 I’m currently working on this project
-- 🌱 I’m currently learning react, typescript, redux-took-kit
+- 🌱 I’m currently learning to react, typescript, redux-tool-kit
